@@ -20,7 +20,7 @@
 }
 body
 {
-    background: #fff;
+    background-image: linear-gradient(to right, #051D36, #12365D, #051D36);
 }
 .btn
 {
@@ -130,6 +130,8 @@ visibility: hidden;
     position: absolute;
     width: 540px;
     top: 200px;
+    z-index: 10;
+    cursor: pointer;
 }
 .sci
 {
@@ -144,7 +146,7 @@ visibility: hidden;
 {
     content: attr(data-text);
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%,calc(-50% + 120px));
     font-size: 7vw;
@@ -155,7 +157,7 @@ visibility: hidden;
 }
 .sci li:hover::before
 {
-    opacity: 0.1;
+    opacity: 0.5;
     transform: translate(-50%,calc(-50% + 150px));
 }
 .sci li a
@@ -164,18 +166,19 @@ visibility: hidden;
     display: inline-block;
     width: 120px;
     height: 120px;
-    background: #fff;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #333;
+    color: #fff;
     border-radius: 10px;
     text-decoration: none;
     margin: 80px;
+    top: 90px;
     font-size: 4em;
     transform-style: preserve-3d;
     perspective: 500px;
-    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.05);
     transition: background 0.25s;
 }
 .js-tilt-glare
@@ -184,11 +187,11 @@ visibility: hidden;
 }
 .sci li a:hover.español
 {
-    background: #fff;
+    background: transparent;
 }
 .sci li a:hover.english
 {
-    background: #fff;
+    background: transparent;
 }
 .sci li a .fa
 {
@@ -222,12 +225,13 @@ visibility: hidden;
     }
     .sci li::before
     {
-        top: 25%;
+        top: 35%;
         font-size: 14vw;
     }
     .sci li a
     {
         margin: 40px;
+        top: 30px;
     }
     .Language
     {
@@ -238,34 +242,5 @@ visibility: hidden;
         width: 250px;
         top:10%;
         left: 20vw;
-    }
-}
-@media only screen and (max-width: 400px)
-{
-    .sci
-    {
-        margin-top:80px
-    }
-    .sci li
-    {
-        margin-top: 60px;
-    }
-    .sci li::before
-    {
-        top: 28%;
-        font-size: 22vw;
-    }
-    section ul
-    {
-        display: flex;
-        flex-direction: column;
-    }.Language
-    {        
-        min-height: 100vh;
-    }
-    .Language picture img
-    {
-        width: 150px;
-        left: 32vw;
     }
 }

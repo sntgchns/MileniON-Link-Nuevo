@@ -8,7 +8,7 @@
 }
 body
 {
-    background: #fff;
+    background-image: linear-gradient(to right, #051D36, #12365D, #051D36);
 }
 .btn
 {
@@ -113,7 +113,6 @@ visibility: hidden;
     min-height: 100vh;
     min-width: 100vw;
     transition: 0.5s;
-    transform: scale(0.8);
     background-color: transparent;
 }
 .socialMedia img
@@ -121,6 +120,8 @@ visibility: hidden;
     width:540px;
     position:absolute; 
     top:120px;
+    z-index: 10;
+    cursor: pointer;
 }
 .sci
 {
@@ -147,7 +148,7 @@ visibility: hidden;
 }
 .sci li:hover::before
 {
-    opacity: 0.1;
+    opacity: 0.5;
     transform: translate(-50%,calc(-50% + 150px));
 }
 .sci li a
@@ -156,7 +157,7 @@ visibility: hidden;
     /* display: inline-block; */
     width: 150px;
     height: 150px;
-    background: #fff;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +168,7 @@ visibility: hidden;
     font-size: 6em;
     transform-style: preserve-3d;
     perspective: 500px;
-    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.05);
     transition: background 0.25s;
 }
 .js-tilt-glare
@@ -226,17 +227,17 @@ visibility: hidden;
     color: #03a9f4;
     transform: scale(1.75) translateZ(50px);
 }
-@media only screen and (min-width: 1650px)
+@media only screen and (min-width: 1366px)
 {
     .sci
     {        
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 200px;
     }
     .sci li::before
     {
         margin-top: 0;
-        top: 40%;
+        top: 70%;
         transform: translate(-50%,calc(50% + 38px));
     }
     .socialMedia
@@ -257,6 +258,13 @@ visibility: hidden;
 }
 @media only screen and (max-width: 600px)
 {
+	body
+	{		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
     .sci
     {
         margin-top: 0;
