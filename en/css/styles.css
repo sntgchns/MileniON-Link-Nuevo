@@ -218,7 +218,7 @@ visibility: hidden;
 }
 .sci li a:hover .fab
 {
-    color: #fff;
+    color: transparent;
     transform: scale(1.75) translateZ(50px);
 }
 .sci li a:hover .fas
