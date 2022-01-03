@@ -227,7 +227,7 @@ visibility: hidden;
     color: #03a9f4;
     transform: scale(1.75) translateZ(50px);
 }
-@media only screen and (min-width: 1366px)
+@media only screen and (max-width: 1366px)
 {
     .sci
     {        
