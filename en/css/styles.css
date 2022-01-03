@@ -113,7 +113,8 @@ visibility: hidden;
     min-height: 100vh;
     min-width: 100vw;
     transition: 0.5s;
-    background-color: rgb(255, 255, 255);
+    transform: scale(0.8);
+    background-color: transparent;
 }
 .socialMedia img
 {
@@ -175,35 +176,35 @@ visibility: hidden;
 }
 .sci li a:hover.facebook
 {
-    background: #1877f2;
+    background: transparent;
 }
 .sci li a:hover.telegram
 {
-    background: #2F9DDF;
+    background: transparent;
 }
 .sci li a:hover.instagram
 {
-    background: #e4405f;
+    background: transparent;
 }
 .sci li a:hover.twitter
 {
-    background: #0099ff;
+    background: transparent;
 }
 .sci li a:hover.youtube
 {
-    background: #ff0000;
+    background: transparent;
 }
 .sci li a:hover.tiktok
 {
-    background: #020202;
+    background: transparent;
 }
 .sci li a:hover.linkedin
 {
-    background: #0e76a8;
+    background: transparent;
 }
 .sci li a:hover.newsletter
 {
-    background: #fff;
+    background: transparent;
 }
 .sci li a .fab
 {
@@ -225,7 +226,7 @@ visibility: hidden;
     color: #03a9f4;
     transform: scale(1.75) translateZ(50px);
 }
-@media only screen and (max-width: 1650px)
+@media only screen and (min-width: 1650px)
 {
     .sci
     {        
@@ -237,6 +238,10 @@ visibility: hidden;
         margin-top: 0;
         top: 40%;
         transform: translate(-50%,calc(50% + 38px));
+    }
+    .socialMedia
+    {
+        transform: scale(0.8);
     }
     .socialMedia img
     { 
