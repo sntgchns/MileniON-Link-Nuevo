@@ -6,6 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+#particles-js 
+{
+        width:100%;
+        height:100%;       
+		position:fixed;
+        z-index:0;
+}
 body
 {
     background-image: linear-gradient(to right, #051D36, #12365D, #051D36);
